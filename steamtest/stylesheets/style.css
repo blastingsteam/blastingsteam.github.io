@@ -1777,6 +1777,11 @@ article.post .entry-meta p {
 	color: #b7b7b7;
 }
 
+.indexlink::after {
+	text-decoration: none;
+	color: white;
+}
+
 .main-content.blog-posts .entry-meta span a:hover {
 	color: #edb820;
 }	
