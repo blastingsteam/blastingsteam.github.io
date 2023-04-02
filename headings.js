@@ -21,7 +21,7 @@ class MyHeader extends HTMLElement {
                                     <li><a href="contact.html">Contact</a>
                                     <li><a href="register.html">Register</a>
                                     </li>
-                                    <li><a href="news.html">News Scoops</a></li>
+                                    <li><a href="https://blastingsteam.org/spoons.mp4">No Plastic</a></li>
                             </ul>
                         </nav>   
                     </div>
