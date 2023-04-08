@@ -28,7 +28,7 @@ class MyHeader extends HTMLElement {
                                 <li><a href="about-us.html">About</a></li>
                                 <li><a href="classes.html">Our Classes</a>
                                 <li><a href="contact.html">Contact</a>
-                                <li class="has-sub"><a href="courses-grid.html">Forms</a>
+                                <li class="has-sub"><a href="">Forms</a>
                                 <ul class="submenu"> 
                                     <li><a href="register.html">Registration</a></li>
                                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxZmnxVa2BKhatgOMYkXNvNN8uni66wUlw0TEude5XX4tKOQ/viewform" target="_blank">Volunteer to teach a class</a></li> 
