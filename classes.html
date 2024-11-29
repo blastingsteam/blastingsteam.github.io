@@ -44,21 +44,129 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head> 
 <style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-}
+    tr {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    th {
+        border: 1px solid #ddd;
+        padding: 8px;    
+    }
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 250px;
+        height: 250px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
 
-.container {
-  padding: 2px 16px;
-}
+    .container {
+        padding: 2px 16px;
+    }
+    
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card i {
+        font-size: 48px;
+        margin-bottom: 15px;
+        color: #ff0000;
+    }
+
+    /* Mobile responsiveness */
+    @media screen and (max-width: 992px) {
+        .cards-grid {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 10px;
+        }
+        
+        .card {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .card i {
+            font-size: 36px;
+        }
+        
+        h4 {
+            font-size: 16px;
+        }
+        
+        p {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .cards-grid {
+            grid-template-columns: 1fr;
+            padding: 10px;
+        }
+        
+        section {
+            margin-left: 20px !important;
+            margin-right: 20px !important;
+        }
+        
+        .card {
+            width: 100%;
+            max-width: 250px;
+            height: 200px;
+        }
+        
+        h5 {
+            font-size: 16px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+    }
+
+    /* Fix for container overlap */
+    .container {
+        width: auto;
+        max-width: 100%;
+    }
+
+    .btn-primary {
+        white-space: normal !important; /* Allows text to wrap */
+        max-width: 90%; /* Prevents button from touching screen edges */
+        margin: 10px auto; /* Centers the button */
+    }
+
+    @media screen and (max-width: 576px) {
+        .btn-primary {
+            font-size: 14px; /* Smaller font size on mobile */
+            padding: 10px 15px; /* Adjusted padding */
+            width: 90%; /* Takes up most of the container width */
+            height: auto; /* Allows height to adjust based on content */
+        }
+    }
 </style>
 <body class="header-sticky">
     <div class="boxed">
@@ -111,12 +219,12 @@
                 <div class="row">
                     <div class="col-md-12">                    
                         <div class="page-title-heading">
-                            <h2 class="title">OUR PAST CLASSES</h2>
+                            <h2 class="title">OUR CLASSES</h2>
                         </div><!-- /.page-title-heading -->
                         <div class="breadcrumbs">
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li>Our Past Classes</li>
+                                <li>Our Classes</li>
                             </ul>                   
                         </div><!-- /.breadcrumbs --> 
                     </div><!-- /.col-md-12 -->  
@@ -126,182 +234,89 @@
     	<br>
         <!-- About -->
         <section style="margin-left: 70px; margin-right: 70px;">
-         
-        <center><h1>Past Activities</h1>
-            <h5 style="color: blue;">PAST CLASSES & EVENTS FOR THE 2022-2023 YEAR:</h5>
-            
-            <h5 style="color: blue;">
-            <ul>
-                <li>• Walking Robots</li>
-                <li>• Artistic Creations</li>
-                <li>• Finance</li>
-                <li>• Vedic Math</li>
-                <li>• Speech & Debate</li>
-                <li>• Python</li>
-                <li>• Outdoor Events</li>
-                <li>• Bonus hybrid classes from youth volunteers: 
-                    Games, Dance, Rubik’s Cube</li>
-            </ul>
-        </h5>
-        <br>
-        <h2 style="text-decoration-line: underline;">Our Classes</h2>
-        <br>
-        <style>
-            tr {
-                border: 1px solid #ddd;
-                padding: 8px;
-            }
-            th {
-                border: 1px solid #ddd;
-                padding: 8px;    
-            }
-            td {
-                border: 1px solid #ddd;
-                padding: 8px;
-            }
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                transition: 0.3s;
-                width: 40%;
-            }
+            <center>
+                <h1>Registration Details & Activities</h1>
+                <h5>We offer hybrid workshops, thus meeting online or in-person during weekends. A total of 4 classes and two STEAM events are included in the registration fee. The classes are conducted by different STEAM Volunteers and coordinated by the Blasting STEAM Executive Volunteer Team.. We  have different STEAM workshops for kids through which they learn leadership and teamwork skill sets. The workshop focuses mainly on activities relating to science, technology, engineering, art, and math. Students learn to try new challenges and experiences that inspire and support them, while interacting with individuals with similar ideologies and values.
+ 
+ 
+                    Tuition for classes is $175. Space is limited. Payment must be completed in order to secure your spot. Registration will be based on a first-come-first serve basis. NO MAKEUPS/REFUNDS. All parents are required to attend a mandatory parent meeting on the first day of class. Dates will be announced after registration.
+                </h5>
+                <h2 style="text-decoration-line: underline;">Our Classes</h2>
+                <br>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="container">
+                            <i class="fas fa-robot"></i>
+                            <h4><b>Robotics</b></h4> 
+                            <p>Learn to build and program robots</p> 
+                        </div>
+                    </div>
 
-            .card:hover {
-              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            }
+                    <div class="card">
+                        <div class="container">
+                            <i class="fas fa-briefcase"></i>
+                            <h4><b>Entrepreneur</b></h4> 
+                            <p>Develop business and leadership skills</p> 
+                        </div>
+                    </div>
 
-            .container {
-                padding: 2px 16px;
-            }
-        </style>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col" style="margin-right: 0px;"><br>
-            <div class="container">
-              <h4><b>Vedic Maths & Mock Trial</b></h4> 
-              <p>10/21/23 & 10/23/23</p> 
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col">
-            <div class="container" style="margin-right: 0px;"><br>
-              <h4><b>3D Design</b></h4> 
-              <p>3/21/23</p> 
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col" style="margin-left: 0px;"><br>
-            <div class="container">
-              <h4><b>LEGO Robotics</b></h4> 
-              <p>1/6/24 & 1/7/24</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col" style="margin-right: 0px;"><br>
-            <div class="container">
-              <h4><b>Public Speaking & STEM Innovation</b></h4> 
-              <p>1/6/24</p> 
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col">
-            <div class="container" style="margin-right: 0px;"><br>
-              <h4><b>Docent Training</b></h4> 
-              <p>1/27/24 & 1/28/24</p> 
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col" style="margin-left: 0px;"><br>
-            <div class="container">
-              <h4><b>Meet & Greet</b></h4> 
-              <p>2/6/24</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col" style="margin-right: 0px;"><br>
-            <div class="container">
-              <h4><b>LEGO Robotics Class 2</b></h4> 
-              <p>3/2/24</p> 
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col" style="margin-right: 0px;"><br>
-            <div class="container">
-              <h4><b>Public Speaking & STEM Innovation Class 2</b></h4> 
-              <p>3/2/24</p> 
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col" style="margin-right: 0px;"><br>
-            <div class="container">
-              <h4><b>STEAM Digital Book Creation</b></h4> 
-              <p>3/23/24 & 3/26/24</p> 
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col">
-            <div class="container" style="margin-right: 0px;"><br>
-              <h4><b>Year-End Activity 1</b></h4> 
-              <p>6/3 or 4 or 10 or 11, 2023</p> 
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col" style="margin-left: 0px;"><br>
-            <div class="container">
-              <h4><b>Year-End Activity 2</b></h4> 
-              <p>Last week of July</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="card col" style="margin-right: 0px;"><br>
-            <div class="container">
-              <h4><b>Year-End Activity 3</b></h4> 
-              <p>8/26</p> 
-            </div>
-        </div>
-    </div>
-</div>
-        <br>
-        <h5><strong>Member Perks</strong> – You pay a low registration fee for expensive and innovative programs. Your family and yourself get to be a part of a community with similar cultural values. We encourage parent volunteering/youth volunteering (see below button for guidelines) and accept sponsors for the STEAM club activities. Classes can change without any prior notice.</h5>
-        <br>
-        <a class="btn btn-primary" href="register.html" role="button">CLICK HERE TO REGISTER NOW</a>
-        <br><br>
-        <a class="btn btn-primary" href="https://docs.google.com/document/d/1Owfcjy4-lTemjuQ3c33i0wYXCYkUIXDhn0z-DBqseto/preview" role="button">CLICK HERE TO VIEW THE YOUTH VOLUNTEERING GUIDELINES</a>
-        <br><br><br>
+                    <div class="card">
+                        <div class="container">
+                            <i class="fas fa-comments"></i>
+                            <h4><b>Debate</b></h4>
+                            <p>Master public speaking and argumentation</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="container">
+                            <i class="fas fa-cube"></i>
+                            <h4><b>3D Design</b></h4> 
+                            <p>Create 3D models and prototypes</p> 
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="container">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h4><b>Docent</b></h4> 
+                            <p>Learn to guide and educate others</p> 
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="container">
+                            <i class="fas fa-music"></i>
+                            <h4><b>Dance</b></h4> 
+                            <p>Express creativity through movement</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="container">
+                            <i class="fas fa-book"></i>
+                            <h4><b>Yearbook</b></h4> 
+                            <p>Document and design memories</p> 
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="container">
+                            <i class="fas fa-plane"></i>
+                            <h4><b>Aviation</b></h4> 
+                            <p>Explore the science of flight</p> 
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h5><strong>Member Perks</strong> – You pay a low registration fee for expensive and innovative programs. Your family and yourself get to be a part of a community with similar cultural values. We encourage parent volunteering/youth volunteering (see below button for guidelines) and accept sponsors for the STEAM club activities. Classes may change without any prior notice.</h5>
+                <br>
+                <a class="btn btn-primary" href="register.html" role="button">CLICK HERE TO REGISTER NOW</a>
+                <br><br>
+                <a class="btn btn-primary" href="https://docs.google.com/document/d/1Owfcjy4-lTemjuQ3c33i0wYXCYkUIXDhn0z-DBqseto/preview" role="button">CLICK HERE TO VIEW THE YOUTH VOLUNTEERING GUIDELINES</a>
+                <br><br><br>
+            </center>
         </section>
-    </center>
         <!-- Footer -->
         <footer class="footer">  
             <div class="footer-widgets">   
